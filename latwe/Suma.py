@@ -22,5 +22,5 @@ Wyjście:
 suma = 0
 for x in range(10):
     a = int(input())
-    suma+=a
+    suma += a
     print(suma)

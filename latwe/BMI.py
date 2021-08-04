@@ -49,6 +49,8 @@ Hiacynta
 nadwaga
 Boleslaw
 """
+
+
 def BMI(waga, wzrost):
     wz = wzrost / 100
     bmi = waga / (wz * wz)

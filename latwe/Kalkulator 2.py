@@ -27,17 +27,19 @@ Wyjście:
 6
 """
 
-def kalkulator(znak,a,b):
-    if znak =='+':
-        return a+b
-    elif znak=='-':
-        return a-b
+
+def kalkulator(znak, a, b):
+    if znak == '+':
+        return a + b
+    elif znak == '-':
+        return a - b
     elif znak == '*':
-        return a*b
+        return a * b
     elif znak == '/':
-        return a//b
+        return a // b
     elif znak == '%':
-        return a%b
+        return a % b
+
 
 rejestry = []
 while True:
@@ -47,16 +49,16 @@ while True:
         a = int(dane[1])
         b = int(dane[2])
         if znak == 'z':
-            rejestry.append([a,b])
+            rejestry.append([a, b])
             continue
-        pom_a =0
-        pom_b =0
+        pom_a = 0
+        pom_b = 0
         for row in rejestry:
-            if row[0]== a:
-                pom_a=row[1]
-            elif row[0]==b:
+            if row[0] == a:
+                pom_a = row[1]
+            elif row[0] == b:
                 pom_b = row[1]
 
-        print(kalkulator(znak,pom_a,pom_b))
+        print(kalkulator(znak, pom_a, pom_b))
     except:
         exit()

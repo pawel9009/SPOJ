@@ -27,23 +27,25 @@ weqqewqewqewqe
 
 """
 
-def string_merge(a,b):
+
+def string_merge(a, b):
     dl_a = len(a)
     dl_b = len(b)
     dlugosc = 0
-    if dl_a>dl_b:
-        dlugosc=dl_b
+    if dl_a > dl_b:
+        dlugosc = dl_b
     else:
-        dlugosc=dl_a
+        dlugosc = dl_a
     wynik = ""
     for q in range(dlugosc):
-        wynik+=a[q]
-        wynik+=b[q]
+        wynik += a[q]
+        wynik += b[q]
     return wynik
+
 
 t = int(input())
 for x in range(t):
     zmienne = input().split()
-    a =zmienne[0]
+    a = zmienne[0]
     b = zmienne[1]
-    print(string_merge(a,b))
+    print(string_merge(a, b))

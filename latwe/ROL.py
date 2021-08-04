@@ -23,12 +23,10 @@ t = int(input())
 for x in range(t):
     text = input().split(' ')
     n = int(text[0])
-    tab=text[1:]
+    tab = text[1:]
     wynik = ""
     pierwszy = tab[0]
-    for a in range(1,len(tab)):
-        wynik+=f'{tab[a]} '
-    wynik+=pierwszy
+    for a in range(1, len(tab)):
+        wynik += f'{tab[a]} '
+    wynik += pierwszy
     print(wynik)
-
-

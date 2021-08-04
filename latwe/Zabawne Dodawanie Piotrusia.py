@@ -24,40 +24,35 @@ Wyjście:
 5 0
 """
 
+
 def dodaj(liczba):
     odwrotnosc = str(liczba)
     odwrotnosc = odwrotnosc[::-1]
-    wynik = liczba+int(odwrotnosc)
+    wynik = liczba + int(odwrotnosc)
     return wynik
 
 
 def palindrom(licz):
     odwrotnosc = str(licz)
     odwrotnosc = odwrotnosc[::-1]
-    if odwrotnosc==str(licz):
+    if odwrotnosc == str(licz):
         return True
     return False
+
 
 t = int(input())
 for x in range(t):
     liczba = int(input())
-    if liczba<10:
-        print(liczba,"0")
-    elif liczba>=10:
-        koniec= False
+    if liczba < 10:
+        print(liczba, "0")
+    elif liczba >= 10:
+        koniec = False
         iteracja = 0
         while not koniec:
             wynik = palindrom(liczba)
             if wynik:
-                print(liczba,iteracja)
-                koniec=True
+                print(liczba, iteracja)
+                koniec = True
             else:
-                liczba=dodaj(liczba)
-                iteracja+=1
-
-
-
-
-
-
-
+                liczba = dodaj(liczba)
+                iteracja += 1

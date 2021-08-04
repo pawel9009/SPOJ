@@ -6,13 +6,13 @@ for x in range(t):
     wynik = None
     flaga = True
     while flaga:
-        if a-b>0 or b-a>0:
-            if a>b:
-                a=a-b
+        if a - b > 0 or b - a > 0:
+            if a > b:
+                a = a - b
             else:
-                b=b-a
+                b = b - a
         else:
             flaga = False
-            wynik=a+b
+            wynik = a + b
 
     print(wynik)

@@ -23,10 +23,8 @@ t = int(input())
 for x in range(t):
     text = input().split(' ')
     n = int(text[0])
-    tab=text[1:]
+    tab = text[1:]
     wynik = ""
-    for a in range(n,0,-1):
-        wynik+=f'{text[a]} '
+    for a in range(n, 0, -1):
+        wynik += f'{text[a]} '
     print(wynik)
-
-

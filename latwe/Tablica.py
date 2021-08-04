@@ -17,5 +17,5 @@ Wyjście:
 tab = input().split(' ')
 wynik = ""
 for x in reversed(tab):
-    wynik+=f'{x} '
+    wynik += f'{x} '
 print(wynik)

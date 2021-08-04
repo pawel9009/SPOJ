@@ -18,26 +18,25 @@ Wyjście:
 1
 2
 """
-def licz(a,b,c):
-    delta =b*b - 4*a*c
-    if delta>0:
+
+
+def licz(a, b, c):
+    delta = b * b - 4 * a * c
+    if delta > 0:
         return 2
-    elif delta==0:
+    elif delta == 0:
         return 1
     else:
         return 0
 
 
-
 while True:
     try:
         we = input().split(' ')
-        a=float(we[0])
-        b=float(we[1])
-        c=float(we[2])
-        print(licz(a,b,c))
+        a = float(we[0])
+        b = float(we[1])
+        c = float(we[2])
+        print(licz(a, b, c))
         print()
     except:
         exit()
-
-

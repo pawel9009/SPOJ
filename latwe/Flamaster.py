@@ -25,36 +25,36 @@ t = int(input())
 for x in range(t):
     text = input()
     wynik = ""
-    znak=0
+    znak = 0
     while znak < len(text):
         licznik = 0
-        if znak != len(text)-1:
-            if text[znak]!=text[znak+1]:
-                wynik+=text[znak]
+        if znak != len(text) - 1:
+            if text[znak] != text[znak + 1]:
+                wynik += text[znak]
                 znak += 1
                 continue
-            elif znak != len(text)-2 and text[znak] == text[znak + 1] and text[znak] == text[znak + 2]:
+            elif znak != len(text) - 2 and text[znak] == text[znak + 1] and text[znak] == text[znak + 2]:
 
                 char = text[znak]
-                for a in range(znak,len(text)):
-                    if char==text[a]:
-                        licznik+=1
+                for a in range(znak, len(text)):
+                    if char == text[a]:
+                        licznik += 1
                     else:
                         break
-                wynik+=char
-                wynik+=str(licznik)
-                if licznik>0:
-                    znak+=licznik
+                wynik += char
+                wynik += str(licznik)
+                if licznik > 0:
+                    znak += licznik
                 else:
                     znak += 1
                 continue
-            elif text[znak]== text[znak+1]:
+            elif text[znak] == text[znak + 1]:
                 wynik += text[znak]
                 znak += 1
                 continue
 
         else:
-            wynik+=text[znak]
+            wynik += text[znak]
             znak += 1
 
     print(wynik)

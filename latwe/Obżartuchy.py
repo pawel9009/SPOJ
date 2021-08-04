@@ -28,9 +28,10 @@ Wyjście
 """
 
 import math
+
 t = int(input())
 for x in range(t):
-    wejscie= input().split(' ')
+    wejscie = input().split(' ')
     osoby = int(wejscie[0])
     pudelko = int(wejscie[1])
     czasy = []
@@ -39,8 +40,7 @@ for x in range(t):
 
     ciastka = 0
     for czas in czasy:
-        liczba = (3600*24)//int(czas)
-        ciastka+=liczba
-    zakupy= ciastka/pudelko
+        liczba = (3600 * 24) // int(czas)
+        ciastka += liczba
+    zakupy = ciastka / pudelko
     print(math.ceil(zakupy))
-

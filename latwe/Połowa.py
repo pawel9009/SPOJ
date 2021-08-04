@@ -23,5 +23,5 @@ ktoto
 t = int(input())
 for x in range(t):
     text = input()
-    l = len(text)//2
+    l = len(text) // 2
     print(text[0:l])

@@ -28,11 +28,13 @@ C 5 5
 X 1 1
 """
 
-import  math
+import math
 from operator import attrgetter
+
+
 class Lista(object):
     def __init__(self):
-        self.lista =[]
+        self.lista = []
 
     def add(self, pkt):
         self.lista.append(pkt)
@@ -46,11 +48,12 @@ class Lista(object):
 
 
 class Punkt(object):
-    def __init__(self, nazwa, x ,y):
+    def __init__(self, nazwa, x, y):
         self.nazwa = nazwa
         self.x = x
         self.y = y
-        self.odleglosc = math.sqrt(self.x*self.x+self.y*self.y)
+        self.odleglosc = math.sqrt(self.x * self.x + self.y * self.y)
+
 
 wynik = []
 t = int(input())

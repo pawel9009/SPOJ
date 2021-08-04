@@ -71,14 +71,14 @@ lista = []
 while True:
     try:
         znak = input()
-        if znak=='+':
+        if znak == '+':
             a = int(input())
             if len(lista) < 10:
                 lista.append(a)
                 print(":)")
             else:
                 print(":(")
-        elif znak=='-':
+        elif znak == '-':
             if len(lista) == 0:
                 print(":(")
             else:

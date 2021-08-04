@@ -19,8 +19,8 @@ Wyjście:
 """
 t = int(input())
 for x in range(t):
-    dane= input().split(' ')
-    a=int(dane[0])
-    b=int(dane[1])
-    wynik = (a*b)/((a+b)/2)
+    dane = input().split(' ')
+    a = int(dane[0])
+    b = int(dane[1])
+    wynik = (a * b) / ((a + b) / 2)
     print(int(wynik))

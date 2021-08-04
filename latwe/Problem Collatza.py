@@ -29,15 +29,17 @@ Wyjście:
 7
 61
 """
+
+
 def rek(s):
     iter = 0
-    while s>1:
+    while s > 1:
         if s % 2 == 1:
-            s=3*s+1
-            iter+=1
-        elif s% 2 ==0:
-            s=s/2
-            iter+=1
+            s = 3 * s + 1
+            iter += 1
+        elif s % 2 == 0:
+            s = s / 2
+            iter += 1
     return iter
 
 

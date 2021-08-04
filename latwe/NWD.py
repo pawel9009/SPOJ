@@ -29,14 +29,17 @@ Output:
 4
 3
 """
-def NWD(a,b):
-    if b>0:
-        return NWD(b,a%b)
+
+
+def NWD(a, b):
+    if b > 0:
+        return NWD(b, a % b)
     return a
+
 
 t = int(input())
 for x in range(t):
     zmienne = input().split(' ')
     a = int(zmienne[0])
     b = int(zmienne[1])
-    print(NWD(a,b))
+    print(NWD(a, b))

@@ -22,8 +22,8 @@ for a in range(t):
     n = int(dane[0])
     x = int(dane[1])
     y = int(dane[2])
-    for num in range(x,n,x):
-        if num%y==0:
+    for num in range(x, n, x):
+        if num % y == 0:
             continue
         else:
             print(num)
