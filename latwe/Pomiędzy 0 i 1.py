@@ -1,3 +1,21 @@
+"""
+Wypisz wszystkie cyfry znajdujące się między pierwszym wystąpieniem cyfry 0 i ostatnim wystąpieniem cyfry 1.
+
+Wejście
+W pierwszym wierszu jedna liczba złożona z maksymalnie miliona cyfr i nie mniej niż 3 cyfry.
+
+Za zerem jest zawsze co najmniej jedna jedynka.
+
+Wyjście
+Ciąg cyfr występujący między pierszym wystąpieniem cyfry 0 i ostatnim wystąpieniem cyfry 1. Jeśli ciąg jest pusty, to należy wypisać napis PUSTY.
+
+Przykład
+Wejście:
+12302198102
+
+Wyjście:
+2198
+"""
 text = input()
 if len(text) == 0:
     print("PUSTY")

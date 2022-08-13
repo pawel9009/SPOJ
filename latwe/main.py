@@ -1,3 +1,6 @@
+"""
+TEST
+"""
 flaga = True
 while flaga:
     tab = int(input())
